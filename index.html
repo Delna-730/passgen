@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Password Vault</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Cinzel:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="night">
+
+  <div class="wrap">
+
+    <!-- Theme Toggle -->
+    <div class="theme-row">
+      <span class="theme-icon" id="theme-icon">☾</span>
+      <div class="theme-track" id="theme-track" onclick="toggleTheme()">
+        <div class="theme-thumb" id="theme-thumb"></div>
+      </div>
+      <span class="theme-label" id="theme-label">Night</span>
+    </div>
+
+    <div class="pg-head">
+      <h1>PASSWORD VAULT</h1>
+      <p>cryptographically secure generation</p>
+    </div>
+
+    <div class="lbl">generated password</div>
+    <div class="out ph" id="output">awaiting generation . . .</div>
+
+    <div class="sbar"><div class="sfill" id="sfill"></div></div>
+    <div class="slbl" id="slbl">—</div>
+
+    <div class="divider"></div>
+
+    <div class="srow">
+      <label>Length</label>
+      <input type="range" id="len" min="6" max="64" value="16" step="1"/>
+      <div class="lenv" id="lenval">16</div>
+    </div>
+
+    <div class="toggles">
+      <div class="ti active" data-key="upper" onclick="toggle(this)">
+        <div class="ttext">Uppercase<span>A – Z</span></div>
+        <div class="sw on" id="sw-upper"></div>
+      </div>
+      <div class="ti active" data-key="lower" onclick="toggle(this)">
+        <div class="ttext">Lowercase<span>a – z</span></div>
+        <div class="sw on" id="sw-lower"></div>
+      </div>
+      <div class="ti active" data-key="numbers" onclick="toggle(this)">
+        <div class="ttext">Numbers<span>0 – 9</span></div>
+        <div class="sw on" id="sw-numbers"></div>
+      </div>
+      <div class="ti active" data-key="symbols" onclick="toggle(this)">
+        <div class="ttext">Symbols<span>! @ # $ % ^ &amp; *</span></div>
+        <div class="sw on" id="sw-symbols"></div>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn btn-gen" onclick="generate()">Generate</button>
+      <button class="btn btn-copy" id="copybtn" onclick="copyPwd()">Copy</button>
+    </div>
+
+    <div class="hlbl">recent passwords</div>
+    <div class="hlist" id="hlist">
+      <div class="hempty">no history yet</div>
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
