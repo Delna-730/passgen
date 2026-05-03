@@ -1,10 +1,10 @@
-PassGen – Secure Password Generator
-Introduction
+# PassGen – Secure Password Generator
+### Introduction
 
 PassGen is a fast, lightweight, and secure web application for generating strong, customizable passwords. It runs entirely in the browser, ensuring that no generated passwords are stored or transmitted—keeping user data private.
 
 
-Table of Contents
+### Table of Contents
 
 
 Introduction
@@ -20,11 +20,11 @@ Future Improvements
 Contributors
 License
 
-Live Demo
+### Live Demo
 🌐 https://passgen-navy-seven.vercel.app/
 💻 https://github.com/Delna-730/passgen.git
 
-Features
+### Features
 
 Generate strong, random passwords instantly
 Customize password length
@@ -37,7 +37,7 @@ Copy to clipboard with one click
 Responsive and user-friendly interface
 Fully client-side (no backend required)
 
-Usage
+### Usage
 
 Open the app
 Set your desired password length.
@@ -58,7 +58,7 @@ JavaScript
 
 Vercel (deployment)
 
-Project Structure
+### Project Structure
 
 passgen/
 │── index.html
@@ -81,29 +81,23 @@ Password length limits
 Randomization logic
 💡 Examples
 
-Generated Password:
+### Generated Password:
 
 Xk9#pL2@qW7!
 
 Settings:
-
 Length: 12
 Uppercase: Enabled
 Numbers: Enabled
 Symbols: Enabled
-🐞 Troubleshooting
-Issue	Solution
-App not starting	Run npm install
-Port already in use	Change port or stop other service
-Copy button not working	Check browser permissions
-🚧 Future Improvements
-Password strength indicator
-Dark/light mode toggle
+
+### Future Improvements
+
 Passphrase generator
 Option to exclude ambiguous characters
 Generate multiple passwords at once
 👥 Contributors
 Delna (GitHub: Delna-730)
 
-License 
+### License 
 This project is licensed under the MIT License.
